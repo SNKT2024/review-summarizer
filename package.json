@@ -1,0 +1,19 @@
+{
+  "name": "review-summarizer",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev:client": "bun --cwd packages/client dev",
+    "dev:server": "cd packages/server && bun --watch src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

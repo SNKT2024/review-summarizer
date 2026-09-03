@@ -1,0 +1,8 @@
+import { Review } from "../generated/prisma/client";
+import { reviewRepository } from "../repositories/review.repositories";
+
+export const reviewService = {
+  async getReviews(productId: number): Promise<Review[]> {
+    return reviewRepository.getReviews(productId);
+  },
+};
